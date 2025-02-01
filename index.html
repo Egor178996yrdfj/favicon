@@ -1,11 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>favicon</title>
+    <title>Генератор кода</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+        }
+        input, button {
+            padding: 10px;
+            margin: 5px;
+        }
+        #message {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    <img src="Group 212.png" style="width: 516px; height: 516px;">
+    <h1>Генератор и проверка кода</h1>
+    <div>
+        <input type="text" id="codeInput" placeholder="Введите код">
+        <button onclick="checkCode()">Проверить код</button>
+    </div>
+    <div>
+        <button onclick="generateCode()">Сгенерировать код</button>
+    </div>
+    <div id="message"></div>
+
+    <script src="script.js"></script>
 </body>
 </html>
